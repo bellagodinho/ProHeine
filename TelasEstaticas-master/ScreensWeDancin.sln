@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScreensWeDancin", "ScreensWeDancin.csproj", "{E357F61C-8EFC-48DE-87DF-CFA0BC85801F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeDancin.Domain", "..\WeDancin.Domain\WeDancin.Domain.csproj", "{2040F4BC-E6C1-4BA2-8CBA-D97094456F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E357F61C-8EFC-48DE-87DF-CFA0BC85801F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E357F61C-8EFC-48DE-87DF-CFA0BC85801F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E357F61C-8EFC-48DE-87DF-CFA0BC85801F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E357F61C-8EFC-48DE-87DF-CFA0BC85801F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2040F4BC-E6C1-4BA2-8CBA-D97094456F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2040F4BC-E6C1-4BA2-8CBA-D97094456F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2040F4BC-E6C1-4BA2-8CBA-D97094456F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2040F4BC-E6C1-4BA2-8CBA-D97094456F94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4A284D6-F2DE-4139-A55F-1CD1F8624EE4}
+	EndGlobalSection
+EndGlobal

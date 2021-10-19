@@ -1,0 +1,131 @@
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.exe
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.deps.json
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.runtimeconfig.json
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.runtimeconfig.dev.json
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.dll
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.pdb
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.Views.dll
+D:\Users\bella\source\repos\ScreensWeDancin\bin\Debug\netcoreapp3.1\ScreensWeDancin.Views.pdb
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.csproj.AssemblyReference.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.AssemblyInfoInputs.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.AssemblyInfo.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.csproj.CoreCompileInputs.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.MvcApplicationPartsAssemblyInfo.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorComponent.input.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorComponent.output.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\ScreensWeDancin.dll
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.TagHelpers.input.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.TagHelpers.output.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorCoreGenerate.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorAssemblyInfo.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorAssemblyInfo.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\staticwebassets\ScreensWeDancin.StaticWebAssets.Manifest.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\staticwebassets\ScreensWeDancin.StaticWebAssets.xml
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\scopedcss\bundle\ScreensWeDancin.styles.css
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorTargetAssemblyInfo.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorTargetAssemblyInfo.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.Views.pdb
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.dll
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.pdb
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.genruntimeconfig.cache
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\ScreensWeDancin.csproj.CopyComplete
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\SignUp.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\SignUp.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\SideMenuComponent.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Components\SideMenuComponent.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\CreateProfile.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\SignUpValidated.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\CreateProfile.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\SignUpValidated.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\Login.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\Login.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Profile\MyProfile.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Pages\Profile\MyProfile.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\ChipsComponent.razor.g.cs
+D:\Users\bella\source\repos\ScreensWeDancin\obj\Debug\netcoreapp3.1\Razor\Components\ChipsComponent.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.exe
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.deps.json
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.runtimeconfig.json
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.runtimeconfig.dev.json
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.Views.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\bin\Debug\netcoreapp3.1\ScreensWeDancin.Views.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.csproj.AssemblyReference.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.AssemblyInfoInputs.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.AssemblyInfo.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.csproj.CoreCompileInputs.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorComponent.input.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\ChipsComponent.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Components\SideMenuComponent.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Profile\MyProfile.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\CreateProfile.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\Login.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\SignUp.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\SignUp\SignUpValidated.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorComponent.output.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\RazorDeclaration\ScreensWeDancin.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.TagHelpers.input.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.TagHelpers.output.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorCoreGenerate.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Components\ChipsComponent.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Components\SideMenuComponent.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\Profile\MyProfile.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\CreateProfile.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\Login.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\SignUp.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\SignUp\SignUpValidated.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorAssemblyInfo.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorAssemblyInfo.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\staticwebassets\ScreensWeDancin.StaticWebAssets.Manifest.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\staticwebassets\ScreensWeDancin.StaticWebAssets.xml
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\scopedcss\bundle\ScreensWeDancin.styles.css
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorTargetAssemblyInfo.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.RazorTargetAssemblyInfo.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.Views.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.genruntimeconfig.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\TelasEstaticas-master\obj\Debug\netcoreapp3.1\ScreensWeDancin.csproj.CopyComplete

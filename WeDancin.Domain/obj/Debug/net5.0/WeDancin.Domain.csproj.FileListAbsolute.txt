@@ -1,0 +1,60 @@
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/bin/Debug/net5.0/WeDancin.Domain.deps.json
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/bin/Debug/net5.0/WeDancin.Domain.dll
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/bin/Debug/net5.0/ref/WeDancin.Domain.dll
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/bin/Debug/net5.0/WeDancin.Domain.pdb
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.csproj.AssemblyReference.cache
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.AssemblyInfoInputs.cache
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.AssemblyInfo.cs
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.csproj.CoreCompileInputs.cache
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.dll
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/ref/WeDancin.Domain.dll
+C:/Users/HeinrichEberhardt/source/repos/WeDancin/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.pdb
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/bin/Debug/net5.0/WeDancin.Domain.deps.json
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/bin/Debug/net5.0/WeDancin.Domain.dll
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/bin/Debug/net5.0/ref/WeDancin.Domain.dll
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/bin/Debug/net5.0/WeDancin.Domain.pdb
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.csproj.AssemblyReference.cache
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.AssemblyInfoInputs.cache
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.AssemblyInfo.cs
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.csproj.CoreCompileInputs.cache
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.dll
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/ref/WeDancin.Domain.dll
+/Users/heberhardt/Dropbox/WeDancin.Frontend/WeDancin.Domain/obj/Debug/net5.0/WeDancin.Domain.pdb
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.deps.json
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\bin\Debug\net5.0\ref\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.pdb
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.csproj.AssemblyReference.cache
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.AssemblyInfoInputs.cache
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.AssemblyInfo.cs
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\ref\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Dropbox\WeDancin.Frontend\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.deps.json
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\ref\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.AssemblyInfoInputs.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.AssemblyInfo.cs
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\ref\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.pdb
+C:\Users\HeinrichEberhardt\Downloads\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.csproj.AssemblyReference.cache
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.deps.json
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.dll
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\ref\WeDancin.Domain.dll
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\bin\Debug\net5.0\WeDancin.Domain.pdb
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.csproj.AssemblyReference.cache
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.AssemblyInfoInputs.cache
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.AssemblyInfo.cs
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.csproj.CoreCompileInputs.cache
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.dll
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\ref\WeDancin.Domain.dll
+D:\Users\bella\source\repos\TelasEstaticas-master (1)\WeDancin.Domain\obj\Debug\net5.0\WeDancin.Domain.pdb

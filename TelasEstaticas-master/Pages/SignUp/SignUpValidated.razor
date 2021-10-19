@@ -1,0 +1,52 @@
+﻿@page "/signupvalidated/{email}"
+
+<style>
+    /* || PAGE LAYOUT STYLES */
+    .espaco-validacao {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        position: absolute;
+        height: 244px;
+        width: 558.16px;
+        left: 33%;
+        top: 250px;
+        z-index: 3;
+    }
+</style>
+
+
+<header>
+    <a href="login">
+        <img src="/images/Brand/Logo.svg" alt="We Dancin logo"
+             style="position: absolute; width: 107px; left: 10.5%; top: 32px;" />
+    </a>
+</header>
+
+@*                 Conteúdo do Box                  *@
+
+<section class="espaco-validacao">
+    <div style="text-align: center;">
+        <h1>Verifique sua caixa de entrada!</h1>
+        <div>
+            <p class="body-text" style="margin: 16px 0;">Enviamos um e-mail para @email.</p>
+            <p class="body-text">Clique no link do e-mail para confirmá-lo e ativar sua conta.</p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <h4>Não recebeu nosso e-mail?</h4>
+        <div><p class="body-text">Verifique sua pasta de spam ou <a href="#" style="color: #1877F2;">clique aqui</a>.</p></div>
+    </div>
+</section>
+
+@*                 Responsívo (mudar a imagem)                  *@
+<footer>
+    <img src="/images/Lines/validated.svg" alt="Linhas orgânicas" style="position: absolute; left: 0; top: 280px;" />
+</footer>
+
+@code {
+    [Parameter] public string email { get; set;}
+
+}

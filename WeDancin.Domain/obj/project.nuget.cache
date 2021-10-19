@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "/9iZ2ocnMJlsppvzzZRvnnYEg3588hL75NpDDI0yeXwG0iK7BMiX3k3EIhlUCefARq9Ayf1sQek0QEkPX9geYA==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\bella\\source\\repos\\TelasEstaticas-master (1)\\WeDancin.Domain\\WeDancin.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bella\\.nuget\\packages\\awssdk.core\\3.7.3.9\\awssdk.core.3.7.3.9.nupkg.sha512",
+    "C:\\Users\\bella\\.nuget\\packages\\awssdk.sqs\\3.7.1.12\\awssdk.sqs.3.7.1.12.nupkg.sha512",
+    "C:\\Users\\bella\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.10\\microsoft.aspnetcore.http.features.5.0.10.nupkg.sha512",
+    "C:\\Users\\bella\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\bella\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

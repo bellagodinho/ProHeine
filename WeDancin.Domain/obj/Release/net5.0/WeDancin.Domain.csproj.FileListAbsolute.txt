@@ -1,0 +1,12 @@
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\bin\Release\net5.0\WeDancin.Domain.deps.json
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\bin\Release\net5.0\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\bin\Release\net5.0\ref\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\bin\Release\net5.0\WeDancin.Domain.pdb
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.csproj.AssemblyReference.cache
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.AssemblyInfoInputs.cache
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.AssemblyInfo.cs
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\ref\WeDancin.Domain.dll
+C:\Users\HeinrichEberhardt\source\repos\WeDancin\WeDancin.Domain\obj\Release\net5.0\WeDancin.Domain.pdb

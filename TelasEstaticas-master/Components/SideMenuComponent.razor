@@ -1,0 +1,144 @@
+﻿@page "/sidemenu"
+
+<style>
+    :root {
+        --sidemenu-collapsed-width: 3.5rem;
+    }
+
+    .bi {
+        color: #7f7a7f;
+    }
+
+    .icon-settings {
+        margin: 10px 0;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+        .icon-settings:hover .side-rectangle {
+            background: #F3837B;
+        }
+
+        .icon-settings:hover i {
+            color: #F3837B;
+        }
+
+        .icon-settings:focus .side-rectangle, .icon-settings:active .side-rectangle {
+            background: var(--primary-red);
+        }
+
+        .icon-settings:focus i, .icon-settings:active i {
+            color: var(--primary-red);
+        }
+
+    .side-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 34px 0px;
+        position: fixed;
+        width: var(--sidemenu-collapsed-width);
+        height: 900px;
+        left: 0px;
+        top: 0px;
+        background: #F5F5F5;
+        box-shadow: 0px 100px 80px rgba(66, 0, 74, 0.1), 0px 64.8148px 46.8519px rgba(66, 0, 74, 0.0759259), 0px 38.5185px 25.4815px rgba(66, 0, 74, 0.0607407), 0px 20px 13px rgba(66, 0, 74, 0.05), 0px 8.14815px 6.51852px rgba(66, 0, 74, 0.0392593), 0px 1.85185px 3.14815px rgba(66, 0, 74, 0.0240741);
+    }
+
+        /*.side-menu:hover {
+            display: none !important;
+        }
+
+    .side-menu-expanded {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 34px 0px;
+        position: fixed;
+        width: var(--sidemenu-collapsed-width);
+        height: 900px;
+        left: 0px;
+        top: 0px;
+        background: #F5F5F5;
+        box-shadow: 0px 100px 80px rgba(66, 0, 74, 0.1), 0px 64.8148px 46.8519px rgba(66, 0, 74, 0.0759259), 0px 38.5185px 25.4815px rgba(66, 0, 74, 0.0607407), 0px 20px 13px rgba(66, 0, 74, 0.05), 0px 8.14815px 6.51852px rgba(66, 0, 74, 0.0392593), 0px 1.85185px 3.14815px rgba(66, 0, 74, 0.0240741);
+    }*/
+
+    .side-rectangle {
+        position: fixed;
+        width: 3px;
+        height: 23px;
+        left: 53px;
+        background: #f5f5f5;
+    }
+</style>
+
+
+<div class="side-menu">
+    <div style="position: fixed;">
+        <a href="myprofile"><img src="/images/Brand/LogoMenu.svg" alt="Mini logo" /></a>
+    </div>
+    <div style="position: fixed; height: 192px; top: 106px;">
+        <div class="icon-settings">
+            <a href="sidemenu"><i class="bi bi-house-door" aria-label="home icon"></i></a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings">
+            <a href="createprofile"><i class="bi bi-calendar2-week" aria-label="calendário icon"></i></a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings">
+            <a href="signup"><i class="bi bi-wallet2" aria-label="carteira icon"></i></a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings">
+            <a href="signupvalidated"><i class="bi bi-person-badge" aria-label="perfil icon"></i></a>
+            <div class="side-rectangle"></div>
+        </div>
+    </div>
+    <div style="position: fixed; height: 96px; bottom: 5%;">
+        <div class="icon-settings">
+            <a href="myprofile"><i class="bi bi-gear" aria-label="configurações icon"></i></a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings" style="padding-left: 2px;">
+            <a href="#"><i class="bi bi-box-arrow-right" aria-label="sair log-out icon"></i></a>
+            <div class="side-rectangle"></div>
+        </div>
+    </div>
+</div>
+
+@*<div class="side-menu-expanded">
+    <div style="position: fixed;">
+        <a href="myprofile"><img src="/images/Brand/LogoMenu.svg" alt="Mini logo" /></a>
+    </div>
+    <div style="position: fixed; height: 192px; top: 106px;">
+        <div class="icon-settings">
+            <a href="sidemenu"><i class="bi bi-house-door" aria-label="home icon"></i> Home</a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings">
+            <a href="createprofile"><i class="bi bi-calendar2-week" aria-label="calendário icon"></i> Minhas aulas</a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings">
+            <a href="signup"><i class="bi bi-wallet2" aria-label="carteira icon"></i> Meu financeiro</a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings">
+            <a href="signupvalidated"><i class="bi bi-person-badge" aria-label="perfil icon"></i>Meu perfil</a>
+            <div class="side-rectangle"></div>
+        </div>
+    </div>
+    <div style="position: fixed; height: 96px; bottom: 5%;">
+        <div class="icon-settings">
+            <a href="myprofile"><i class="bi bi-gear" aria-label="configurações icon"></i>Configurações</a>
+            <div class="side-rectangle"></div>
+        </div>
+        <div class="icon-settings" style="padding-left: 2px;">
+            <a href="#"><i class="bi bi-box-arrow-right" aria-label="sair log-out icon"></i> Sair</a>
+            <div class="side-rectangle"></div>
+        </div>
+    </div>
+</div>*@

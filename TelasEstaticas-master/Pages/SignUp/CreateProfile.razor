@@ -1,0 +1,311 @@
+﻿@page "/createprofile"
+@using WeDancin.Domain.Entities.Accounts
+@inject ILocalStorageService _localStorage
+@inject NavigationManager _navigationManager
+@inject IUserDetailsRepository _userDetailsRepository
+@inject IUserRepository _userRepository
+
+<style>
+    /* || PAGE LAYOUT STYLES */
+    .page {
+        height: 100%;
+        width: 100%;
+    }
+
+    .createprofile-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* | FORM LAYOUT STYLES */
+    .avatar-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .curriculumTextarea {
+        padding-top: 50px !important;
+    }
+
+        .curriculumTextarea:focus {
+            padding-top: 50px !important;
+        }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 30% 65%;
+        grid-gap: 24px;
+        justify-content: center;
+        position: absolute;
+        top: 226px;
+        max-width: 1140px;
+        margin-top: 15px;
+        padding-bottom: 50px;
+        z-index: 3;
+    }
+
+    .profile-grid-2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 364px 586px auto;
+        grid-gap: 24px;
+    }
+
+    .white-box {
+        height: fit-content;
+        padding: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(66, 0, 74, 0.22), 0px 0.385185px 1.59259px rgba(66, 0, 74, 0.13363), 0px 0.0814815px 0.407407px rgba(66, 0, 74, 0.0863704);
+        border-radius: 20px;
+    }
+
+    /* || PAGE ELEMENTS STYLES */
+    #avatar-placeholder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 96px;
+        height: 96px;
+        background: #F5F5F5;
+        border-radius: 20px;
+    }
+
+    #profile-icon {
+        position: relative;
+        top: 6px;
+        font-size: 70px;
+        color: #ACACAC;
+    }
+
+    .publish-button {
+        position: absolute;
+        left: 77.7%;
+        top: 1014px;
+        width: 219px;
+        height: 58px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #aba8ac;
+    }
+
+    /* || TEXT STYLES */
+    .box-titles {
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        color: #6F007D;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .upper-text-display {
+        position: relative;
+        top: 80px;
+        min-width: 1100px;
+        width: max-content;
+        z-index: 3;
+    }
+
+    /* || FUNCTIONALITIES */
+    .image-input > input { display: none; }
+
+    .image-input i { cursor: pointer; }
+</style>
+
+<header>
+    <img src="/images/Lines/create-profile.svg" alt="Linhas orgânicas coloridas" style="position: absolute; top: 0; right: 0; z-index: 1;" />
+    <img src="/images/Brand/Logo.svg" alt="Logo We Dancin" style="position: relative; top: 20px; left: 10.2%;" />
+</header>
+
+<EditForm class="form-signin" Model="@userLogin" OnValidSubmit="@HandleValidSubmit">
+    <div class="createprofile-display">
+
+        <div class="upper-text-display">
+            <h2 style="color: #DB4880;">Olá @username!</h2>
+            <p class="body-text">Preencha seu perfil público para atrair e se conectar com os alunos.</p>
+        </div>
+
+        <section class="profile-grid">
+            <div class="white-box">
+                <div class="avatar-flex">
+                    <div id="avatar-placeholder">
+                        <div class="image-input">
+                            <label for="formFile" class="form-label"><i class="bi-person-plus" id="profile-icon"></i></label>
+                            <input class="form-control" type="file" id="formFile" @bind="user.ProfileImage">
+                        </div>
+                    </div>
+                    <p class="body-text" style="width: 170px; margin: auto;">Clique no ícone para adicionar uma foto ao seu perfil.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <div class="form-floating">
+                        <input type="text" class="form-control on-surface active-placeholder" id="floatingInput" placeholder="Nome artístico" required>
+                        <label for="floatingInput">Nome de usuário</label>
+                    </div>
+                    <div class="form-floating" style="margin-top: 24px;">
+                        <input type="text" class="form-control on-surface active-placeholder" id="floatingInput" placeholder="@@usuário" required>
+                        <label for="floatingInput">@@usuário</label>
+                    </div>
+                    <div class="form-floating" style="margin-top: 24px;">
+                        <input type="text" class="form-control on-surface active-placeholder" @bind="userDetails.Instagram" id="floatingInput" placeholder="Instagram (opcional)">
+                        <label for="floatingInput">Instagram (opcional)</label>
+                        <p class="under-text">O conteúdo no seu feed do Instagram estará disponível em seu perfil de professor. <i class="bi bi-exclamation-square" style="margin-left: 5px;"></i></p>
+                    </div>
+                    <div class="form-floating" style="margin-top: 24px;">
+                        <input type="text" class="form-control on-surface active-placeholder" @bind="userDetails.TikTok" id="floatingInput" placeholder="TikTok (opcional)">
+                        <label for="floatingInput">TikTok (opcional)</label>
+                        <p class="under-text">O conteúdo no seu feed do TikTok estará disponível em seu perfil de professor. <i class="bi bi-exclamation-square" style="margin-left: 5px;"></i></p>
+                    </div>
+                    <div class="form-floating" style="margin-top: 24px;">
+                        <input type="text" class="form-control on-surface active-placeholder" @bind="userDetails.City" id="floatingInput" placeholder="Cidade" required>
+                        <label for="floatingInput">Cidade</label>
+                    </div>
+                    <div class="form-floating" style="margin-top: 24px;">
+                        <select class="form-select on-surface active-placeholder" @bind="userDetails.State" id="floatingSelect" aria-label="Floating label select example" required>
+                            <option selected>Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RO">Roraima</option>
+                        </select>
+                        <label for="floatingSelect">Estado</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-grid-2">
+                <div class="white-box">
+                    <h4 class="box-titles">Sobre você</h4>
+                    <div class="flex-column">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Conte um pouco sobre você e o que a dança representa." @bind="userDetails.AboutMe" id="floatingTextarea2" maxlength="120" style="height: 164px"></textarea>
+                            <label for="floatingTextarea2">Conte um pouco sobre você e o que a dança representa.</label>
+                        </div>
+                        <div class="form-floating" style="margin-top: 16px;">
+                            @*<input class="form-control" list="datalistOptions" id="floatingExampleDataList" placeholder="Encontre (a)s modalidade(s) de dança que você vai oferecer aos alunos.">
+        <datalist id="datalistOptions">
+            <option value="San Francisco"></option>
+            <option value="New York"></option>
+        </datalist>*@
+                            <input class="form-control" @bind="userDetails.DanceModalities" id="floatingExampleDataList" placeholder="Encontre (a)s modalidade(s) de dança que você vai oferecer aos alunos.">
+                            <label for="floatingExampleDataList">Encontre (a)s modalidade(s) de dança que você vai oferecer aos alunos.</label>
+                        </div>
+                    </div>
+                    <div class="under-text">
+                        Caso não encontre alguma modalidade específica, entre em contato com o nosso suporte pelo e-mail: <a>suporte@wedancin.com.br</a>
+                    </div>
+                </div>
+
+                <div class="white-box">
+                    <h4 class="box-titles">Sua carreira</h4>
+                    <div class="flex-column">
+                        <div class="form-floating">
+                            <textarea class="form-control curriculumTextarea" @bind="userDetails.DanceCareer" placeholder="Escreva seu currículo profissional, citando experiências, capacitações, cursos, eventos/workshops etc." id="floatingTextarea2" maxlength="120" style="height: 300px"></textarea>
+                            <label for="floatingTextarea2">Escreva seu currículo profissional, citando experiências, capacitações, cursos, eventos/workshops etc.</label>
+                        </div>
+                        <div class="form-floating" style="margin-top: 24px;">
+                            <textarea class="form-control" placeholder="Informações adicionais." @bind="userDetails.AdditionalInformation" id="floatingTextarea2" maxlength="120" style="height: 183px"></textarea>
+                            <label for="floatingTextarea2">Informações adicionais.</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column" style="align-items: end;"><button class="light-purple-button long-button" style="width: 219px; margin-top: 20px;">Cadastrar</button></div>
+            </div>
+
+        </section>
+
+    </div>
+</EditForm>
+
+@code{ 
+    private UserLoginViewModel userLogin = new UserLoginViewModel();
+    private UserDetails userDetails = new UserDetails();
+    private User user = new User();
+
+    private string username = String.Empty;
+
+    private bool erro = false;
+    private string message = String.Empty;
+
+    private Guid UserId { get; set; }
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                userLogin = await _localStorage.GetItem<UserLoginViewModel>("wedancin");
+
+                username = userLogin.Name;
+
+                UserId = userLogin.Id;
+
+            }
+            catch (Exception ex)
+            {
+                _navigationManager.NavigateTo("/login");
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    try
+    //    {
+    //        var apiResponse = await _userDetailsRepository.GetAsync(UserId);
+
+    //        if (!apiResponse.Erro)
+    //        {
+    //            userDetails = _userDetailsRepository.UserRepositoryUserDetailsMiddleware(apiResponse.result);
+    //        }
+    //        else
+    //        {
+    //            erro = true;
+    //            message = apiResponse.Message;
+    //        }
+
+    //    }
+    //    catch (Exception ex)
+    //    {
+
+    //    }
+    //}
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            userDetails.UserId = UserId;
+            var apiResponse = await _userDetailsRepository.CreateAsync(userDetails);
+
+            if (!apiResponse.Erro)
+            {
+                _navigationManager.NavigateTo("/myprofile/" + UserId);
+            }
+            else
+            {
+                erro = true;
+                message = apiResponse.Message;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+    }
+}

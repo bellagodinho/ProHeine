@@ -1,0 +1,641 @@
+﻿@page "/"
+@using WeDancin.Domain.Entities.Accounts
+@using WeDancin.Domain.Entities.Classes
+@using WeDancin.Domain.Interfaces.Classes
+@using ScreensWeDancin.Components.LandingPage
+@inject ILocalStorageService _localStorage
+@inject NavigationManager _navigationManager
+@inject IUserRepository _userRepository
+@*@inject IClassRepository _classRepository
+@inject IClassModalityRepository _classModalityRepository*@
+
+<style>
+    /* || PAGE LAYOUT STYLES */
+    header {
+        margin: auto;
+        width: 100%;
+        max-width: 1340px;
+    }
+
+    .header-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .header-small {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .header-small-top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .landing-page-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 94px;
+        left: 0px;
+        bottom: 0;
+        background: #6F007D;
+        z-index: 3;
+    }
+
+    .footer-elements-1 {
+        display: grid;
+        grid-template-columns: 86px 69px;
+        grid-gap: 20px;
+        align-items: center;
+        position: relative;
+        top: 10px;
+    }
+
+    .footer-elements-2 {
+        display: grid;
+        grid-template-columns: 256px 66px;
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    /* || SECTION 1 STYLES */
+    .landingpage-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1140px;
+        justify-content: center;
+        position: relative;
+        z-index: 3;
+    }
+
+    .landingpage-1-left {
+        width: 48%;
+    }
+
+    .main-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* || SECTION 2 AND 3 STYLES */
+    .landingpage-middle {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        max-width: 1140px;
+        width: 1140px;
+        margin-bottom: 94px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .section-2-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .section-3-boxes {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 24px;
+    }
+
+    .pink-background {
+        position: absolute;
+        width: 100vw;
+        height: 841.37px;
+        left: 0px;
+        top: 535.31px;
+        background: linear-gradient( 180deg, rgba(255, 208, 226, 0) 0%, #FFD0E2 36.77%, #FFD0E2 64.9%, rgba(255, 208, 226, 0) 100%);
+        z-index: 1;
+    }
+
+    /* || SECTION 4 STYLES */
+    .landingpage-4 {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        max-width: 1140px;
+        width: 1140px;
+        justify-content: space-between;
+        margin-bottom: 145px;
+    }
+
+    .ritmos-grid {
+        display: grid;
+        grid-gap: 12px;
+        justify-items: center;
+    }
+
+    .section-4-boxes {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 24px;
+        text-align: center;
+    }
+
+
+    /* || PAGE ELEMENTS STYLES */
+    .form-floating {
+        margin: 20px auto;
+    }
+
+    .search-placeholder {
+        border-radius: 15px;
+        width: 556px;
+        max-width: 90%;
+        min-height: 56px;
+        font: 400 16px/19.2px Lato;
+    }
+
+    /* || PAGE TEXTS STYLES */
+    .green-text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4CC2A8;
+    }
+
+    .h4-landingpage {
+        font-weight: 400;
+        color: #413A42;
+    }
+
+    .main-title {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 79px;
+        color: #51005B;
+    }
+
+    .main-text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #4C454D;
+        margin-bottom: 44px;
+    }
+
+    .second-title {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 50px;
+        color: #51005B;
+    }
+
+    .section-titles {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: #DD6797;
+    }
+
+    .boxxx {
+        padding: 16px;
+        width: 267px;
+        height: 332px;
+        background: url(.jpg), #494949;
+        box-shadow: 0px 8px 33px rgba(66, 0, 74, 0.27), 0px 3.08148px 10.5111px rgba(66, 0, 74, 0.164), 0px 0.651852px 2.68889px rgba(66, 0, 74, 0.106);
+        border-radius: 20px;
+    }
+
+    .boxxx-content {
+        position: relative;
+        top: 131px;
+        display: grid;
+        grid-template-rows: 25px 25px 87px;
+        grid-gap: 16px;
+    }
+
+    .boxxx1 {
+        padding: 24px;
+        width: 364px;
+        height: 253px;
+        background: url(.jpg), #FFFFFF;
+        box-shadow: 0px 8px 33px rgba(66, 0, 74, 0.27), 0px 3.08148px 10.5111px rgba(66, 0, 74, 0.164), 0px 0.651852px 2.68889px rgba(66, 0, 74, 0.106);
+        border-radius: 20px;
+    }
+
+    .boxxx2 {
+        width: 170px;
+        height: 170px;
+        background: url(.jpg), #DBDBDB;
+        border-radius: 20px;
+    }
+
+    @@media only screen and (max-width: 768px) {
+        .header-small {
+            display: flex !important;
+        }
+        .header-flex {
+            display: none !important;
+        }
+    }
+</style>
+
+<header>
+    <div class="header-flex">
+        <img src="/images/Brand/Logo.svg" />
+        <input type="search" class="search-placeholder on-surface active-placeholder" placeholder="Pesquise por modalidade ou @@professor." style="padding: 16px" />
+        <div class="header-right">
+            <a href="/login" class="body-text" style="font-weight: 700; margin-right: 23px;">Fazer login</a>
+            <a href="/" class="body-text" style="font-weight: 700;"><i class="bi bi-cart3"></i></a>
+        </div>
+    </div>
+
+    <div class="header-small" style="display: none;">
+        <div class="header-small-top">
+            <img src="/images/Brand/Logo.svg" />
+            <div class="header-right">
+                <a href="/login" class="body-text" style="font-weight: 700; margin-right: 23px;">Fazer login</a>
+                <a href="/" class="body-text" style="font-weight: 700;"><i class="bi bi-cart3"></i></a>
+            </div>
+        </div>
+        <input type="search" class="search-placeholder on-surface active-placeholder" placeholder="Pesquise por modalidade ou @@professor." style="padding: 16px" />
+    </div>
+</header>
+
+<div class="landing-page-display">
+    <section class="landingpage-1">
+        <div class="landingpage-1-left">
+            <p class="main-title">Conectamos você à dança</p>
+            <p class="main-text">Seja online ou presencial, conectamos professores e alunos a experiências únicas, com tecnologia, praticidade e muita energia!</p>
+            <div class="main-buttons">
+                <a href="/signup" class="dark-purple-button long-button" style="width: max-content;">Quero ser aluno <i class="bi bi-arrow-right"></i></a>
+                <a href="/signup" style="font-weight: 700; margin-left: 24px;">Quero ser professor <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <img src="/images/Stock Images/Teste composição copiar 1.png" />
+        </div>
+    </section>
+
+    <div class="pink-background"></div>
+
+    <section class="landingpage-middle">
+        <p class="section-titles">Próximas aulas</p>
+        <div class="section-2-boxes">            
+            <ClassCardComponent photoName="SalãoGrande.png" classPrice="70" classLevel="Iniciante" classStyle="Aula online" classDate="22 de agosto às 21:00" teacherName="Laura Almeira" teacherUsername="laurinha">Aula de forró fit</ClassCardComponent>
+            <div class="boxxx">
+                <div class="boxxx-content">
+                    <ChipsComponent chipColor="white-chip" chipHeight="25px" chipWidth="max-content">R$@@PerStudentPrice</ChipsComponent>
+                    <ChipsComponent chipColor="green-chip" chipHeight="25px" chipWidth="max-content">@@ClassLevel</ChipsComponent>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 4px;">@@ClassName</h4>
+                        <p class="under-text" style="color: white; margin: 0; font-weight: 700;">@@ClassType</p>
+                        <p class="under-text" style="color: white; margin: 0;">@@Starts_at</p>
+                        <p class="green-text" style=" margin-top: 12px;">Prof @@UserName | @@UserUsername</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boxxx">
+                <div class="boxxx-content">
+                    <ChipsComponent chipColor="white-chip" chipHeight="25px" chipWidth="max-content">R$@@PerStudentPrice</ChipsComponent>
+                    <ChipsComponent chipColor="green-chip" chipHeight="25px" chipWidth="max-content">@@ClassLevel</ChipsComponent>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 4px;">@@ClassName</h4>
+                        <p class="under-text" style="color: white; margin: 0; font-weight: 700;">@@ClassType</p>
+                        <p class="under-text" style="color: white; margin: 0;">@@Starts_at</p>
+                        <p class="green-text" style=" margin-top: 12px;">Prof @@UserName | @@UserUsername</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boxxx">
+                <div class="boxxx-content">
+                    <ChipsComponent chipColor="white-chip" chipHeight="25px" chipWidth="max-content">R$@@PerStudentPrice</ChipsComponent>
+                    <ChipsComponent chipColor="green-chip" chipHeight="25px" chipWidth="max-content">@@ClassLevel</ChipsComponent>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 4px;">@@ClassName</h4>
+                        <p class="under-text" style="color: white; margin: 0; font-weight: 700;">@@ClassType</p>
+                        <p class="under-text" style="color: white; margin: 0;">@@Starts_at</p>
+                        <p class="green-text" style=" margin-top: 12px;">Prof @@UserName | @@UserUsername</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landingpage-middle">
+        <p class="section-titles">Professores populares</p>
+        <div class="section-3-boxes">
+            <div class="boxxx1">
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: grid; grid-template-columns: 96px 206px; grid-gap: 14px; align-items: start; height: 114px; width: 316px; ">
+                        <div style="display: flex; flex-direction: column; align-items: center; ">
+                            <div style="width: 96px; height: 96px;">
+                                <img src="/images/Brand/Logo.svg" style="width: 90px; height: 90px; margin: auto;" />
+                            </div>
+                            <ChipsComponent chipColor="purple-chip" chipHeight="25px" chipWidth="max-content" chipStyleAddOn="position: relative; bottom: 12.5px;"><i class="bi bi-star" style="margin-right: 5px; color: #51005B;"></i> 5,0</ChipsComponent>
+                        </div>
+                        <div id="profile-infos">
+                            <h4 style="margin: 0 0 3px 0;">Nome Professor</h4>
+                            <p class="under-text" style="font-size: 14px; margin: 0 0 8px 0;">@@user.Username</p>
+
+                            <p style="font: 400 16px/23px Lato; color: #7F7481; margin-bottom: 8px;"><i class="bi bi-geo-alt" style="font-size: 13px; position: relative; bottom: .5px; margin-right: 6px; "></i>Belo Horizonte, MG</p>
+                            <button class="dark-purple-button" style="width: 115px; height: 32px; border-radius: 10px;">Ver perfil <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="section-2">
+                        <h4 style="font-weight: 500;">Faça aulas de</h4>
+                        <div style="display: flex; flex-wrap: wrap;">
+                            <ChipsComponent chipColor="purple-chip" chipWidth="max-content" chipHeight="30px">Forró</ChipsComponent>
+                            <ChipsComponent chipColor="purple-chip" chipWidth="max-content" chipHeight="30px">Dança de salão</ChipsComponent>
+                            <ChipsComponent chipColor="purple-chip" chipWidth="max-content" chipHeight="30px">Hip Hop</ChipsComponent>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxxx1">
+                Julinha
+            </div>
+            <div class="boxxx1">
+                Mariazinha
+            </div>
+            <div class="boxxx1">
+                Zezinho
+            </div>
+            <div class="boxxx1">
+                Joãozinho
+            </div>
+            <div class="boxxx1">
+                Pedrinho
+            </div>
+        </div>
+
+    </section>
+
+    <section class="landingpage-4">
+        <div>
+            <p class="second-title">Ritmos mais buscados</p>
+            <button class="dark-purple-button long-button" style="width: max-content;">Ver todos os ritmos <i class="bi bi-arrow-right"></i></button>
+        </div>
+
+        <div class="section-4-boxes">
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Salao.png"/>
+                </div>
+                <h4 class="h4-landingpage">Forró</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Funk.png" />
+                </div>
+                <h4 class="h4-landingpage">Funk e Ritmos Urbanos</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Street.png" />
+                </div>
+                <h4 class="h4-landingpage">Street Dance</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Salao.png" />
+                </div>
+                <h4 class="h4-landingpage">Dança de Salão</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Zumba.png" />
+                </div>
+                <h4 class="h4-landingpage">Zumba</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Funk.png" />
+                </div>
+                <h4 class="h4-landingpage">HipHop</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Street.png" />
+                </div>
+                <h4 class="h4-landingpage">Contemporâneo</h4>
+            </div>
+            <div class="ritmos-grid">
+                <div class="boxxx2">
+                    <img src="/images/Classes/Zumba.png" />
+                </div>
+                <h4 class="h4-landingpage">Dança Africana</h4>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-flex">
+        <div class="footer-elements-1">
+            <div><a class="footer-text"><p class="footer-text">Termos de uso</p></a></div>
+            <div><a class="footer-text"><p class="footer-text">Privacidade</p></a></div>
+        </div>
+        <div class="footer-elements-2">
+            <div><p class="footer-text" style="font-size: 11px; position: relative; top: 5px;">© 2021 WeDancin Todos os direitos reservados</p></div>
+            <div><img src="/images/Brand/LogoFooter.svg" /></div>
+        </div>
+    </div>
+    <div><img src="/images/Lines/landing-page.png" style="position: absolute; bottom: 50px; left: 0; z-index: 1;"/></div>
+</footer>
+
+<!--<div class="espaco-cadastro">
+    <h3 style="margin: 16px 0; text-align: center;">Login</h3>-->
+@*<div>
+        <button style="background: rgba(24, 119, 242, 1); border: 2px solid rgba(81, 0, 91, 0.65); border-radius: 10px; border-color: #1877F2; color: white; font: normal bold 18px Lato; width: 461px; height: 62px; margin-bottom: 20px;">Continue with Facebook</button>
+        <button style="background: rgba(255, 255, 255, 0.3); border: 2px solid rgba(81, 0, 91, 0.65); border-radius: 10px; border-color: #FFFFFF; color: #51005B; font: normal bold 18px Lato; width: 461px; height: 62px; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);">Continue with Google</button>
+    </div>
+
+    <div style="margin: 26px 5px 0 5px;">
+        <p class="purple-body-text" style="margin-bottom: 6px; text-align: center;">ou</p>
+    </div>*@
+
+<!--@if (erro)
+    {
+        <div class="alert alert-danger" role="alert">
+            @message
+        </div>
+    }
+
+    <div style="display: flex; flex-direction: column;">
+        <EditForm class="form-signin" Model="@userLogin" OnValidSubmit="@HandleValidSubmit">
+            <div class="form-floating">
+                <input type="email" class="form-control on-surface active-placeholder" @bind="userLogin.Email" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                <label for="floatingInput">E-mail</label>
+            </div>
+            <div class="form-floating" style="margin-top: 20px;">
+                <input type="password" class="form-control on-surface active-placeholder" @bind="userLogin.Password" id="floatingPassword" placeholder="Crie sua senha">
+                <label for="floatingPassword">Digite sua senha</label>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;"><button class="dark-purple-button long-button" style="width: 461px;">Entrar</button></div>
+            <div style="margin: 16px 5px;"><p class="under-text" style="letter-spacing: -0.02em; text-align: center;"><a href="#">Esqueci minha senha</a></p></div>
+            <div style="margin: 16px 5px;">
+                <p class="body-text" style="text-align: center;">Ao continuar, você concorda com os <a href="#" style="color: #1877F2;">Termos de Serviço da WeDancin</a> e <a href="#" style="color: #1877F2;">Políticas de Privacidade</a>.</p>
+            </div>
+        </EditForm>
+        <div style="margin-top: 14px;">
+            <p class="body-text" style="text-align: center; font-weight: 700">Não possui uma conta? <a href="signup" style="color: #1877F2;">Cadastre-se.</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+
+</footer>-->
+@*@code{
+    private UserLogin userLogin = new UserLogin();
+    private bool erro = false;
+    private string message = string.Empty;
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            var login = await _userRepository.LoginAsync(userLogin);
+
+            if (login.result != null)
+            {
+
+                var user = _userRepository.UserRepositoryLoginMiddleware(login.result);
+
+                if (login != null)
+                {
+                    await _localStorage.SetItem<UserLoginViewModel>("wedancin", user);
+
+                    _navigationManager.NavigateTo("/");
+                }
+            }
+            else
+            {
+                erro = true;
+                message = login.Message;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+
+    } }*@
+
+@*@code {
+    private ClassModality classModality = new ClassModality();
+    private Class class1 = new Class();
+    private bool erro = false;
+    private string message = string.Empty;
+
+    private decimal classPrice = Decimal.Zero;
+
+    private Guid ClassId { get; set; }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                class1 = await _localStorage.GetItem<Class>("wedancin");
+
+                classPrice = Class.PerStudentPrice;
+
+                UserId = userLogin.Id;
+
+            }
+            catch (Exception ex)
+            {
+                _navigationManager.NavigateTo("/login");
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            var login = await _userRepository.LoginAsync(userLogin);
+
+            if (login.result != null)
+            {
+
+                var user = _userRepository.UserRepositoryLoginMiddleware(login.result);
+
+                if (login != null)
+                {
+                    await _localStorage.SetItem<UserLoginViewModel>("wedancin", user);
+
+                    _navigationManager.NavigateTo("/");
+                }
+            }
+            else
+            {
+                erro = true;
+                message = login.Message;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+
+    }
+}*@

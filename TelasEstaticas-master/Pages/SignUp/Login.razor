@@ -1,0 +1,108 @@
+﻿@page "/login"
+@using WeDancin.Domain.Entities.Accounts
+@inject ILocalStorageService _localStorage
+@inject NavigationManager _navigationManager
+@inject IUserRepository _userRepository
+
+<style>
+    /* || PAGE LAYOUT STYLES */
+    .espaco-cadastro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: relative;
+        bottom: 28px;
+        height: 557px;
+        width: 461px;
+        margin: auto;
+        z-index: 3;
+    }
+
+    .form-floating {
+        margin: 20px auto;
+    }
+</style>
+
+<header>
+    <img src="/images/Lines/sign-up.svg" alt="Linhas orgânicas coloridas" style="position: absolute; left: 0; top: -2px; z-index: 1;" />
+    <div style="display: block; text-align: center; position: relative; z-index: 3;"><img src="/images/Brand/Logo.svg" alt="Logo We Dancin" style="margin-top: 35px; margin-bottom: 77px;" /></div>
+</header>
+
+<div class="espaco-cadastro">
+    <section><h3 style="margin: 16px 0; text-align: center;">Login</h3></section>
+
+    @*<div>
+            <button style="background: rgba(24, 119, 242, 1); border: 2px solid rgba(81, 0, 91, 0.65); border-radius: 10px; border-color: #1877F2; color: white; font: normal bold 18px Lato; width: 461px; height: 62px; margin-bottom: 20px;">Continue with Facebook</button>
+            <button style="background: rgba(255, 255, 255, 0.3); border: 2px solid rgba(81, 0, 91, 0.65); border-radius: 10px; border-color: #FFFFFF; color: #51005B; font: normal bold 18px Lato; width: 461px; height: 62px; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);">Continue with Google</button>
+        </div>
+
+        <div style="margin: 26px 5px 0 5px;">
+            <p class="purple-body-text" style="margin-bottom: 6px; text-align: center;">ou</p>
+        </div>*@
+
+    @if (erro)
+    {
+        <div class="alert alert-danger" role="alert">
+            @message
+        </div>
+    }
+
+    <section style="display: flex; flex-direction: column;">
+        <EditForm class="form-signin" Model="@userLogin" OnValidSubmit="@HandleValidSubmit">
+            <div class="form-floating">
+                <input type="email" class="form-control on-surface active-placeholder" @bind="userLogin.Email" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                <label for="floatingInput">E-mail</label>
+            </div>
+            <div class="form-floating" style="margin-top: 20px;">
+                <input type="password" class="form-control on-surface active-placeholder" @bind="userLogin.Password" id="floatingPassword" placeholder="Crie sua senha">
+                <label for="floatingPassword">Digite sua senha</label>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;"><button class="dark-purple-button long-button" style="width: 461px;">Entrar</button></div>
+            <div style="margin: 16px 5px;"><p class="under-text" style="letter-spacing: -0.02em; text-align: center;"><a href="#">Esqueci minha senha</a></p></div>
+            <div style="margin: 16px 5px;">
+                <p class="body-text" style="text-align: center;">Ao continuar, você concorda com os <a href="#" style="color: #1877F2;">Termos de Serviço da WeDancin</a> e <a href="#" style="color: #1877F2;">Políticas de Privacidade</a>.</p>
+            </div>
+        </EditForm>
+        <div style="margin-top: 14px;">
+            <p class="body-text" style="text-align: center; font-weight: 700">Não possui uma conta? <a href="signup" style="color: #1877F2;">Cadastre-se.</a></p>
+        </div>
+    </section>
+</div>
+
+
+@code{
+    private UserLogin userLogin = new UserLogin();
+    private bool erro = false;
+    private string message = string.Empty;
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            var login = await _userRepository.LoginAsync(userLogin);
+
+            if (login.result != null)
+            {
+
+                var user = _userRepository.UserRepositoryLoginMiddleware(login.result);
+
+                if (login != null)
+                {
+                    await _localStorage.SetItem<UserLoginViewModel>("wedancin", user);
+
+                    _navigationManager.NavigateTo("/");
+                }
+            }
+            else
+            {
+                erro = true;
+                message = login.Message;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+
+    } }

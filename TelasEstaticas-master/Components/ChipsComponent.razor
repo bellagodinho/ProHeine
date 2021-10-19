@@ -1,0 +1,60 @@
+﻿@page "/chips"
+
+<style>
+    .badge {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 100px;
+        font: bold 18px/22px Lato;
+    }
+
+    .gray-chip {
+        background-color: #E0E0E0;
+        color: rgba(76, 69, 77, 0.7);
+    }
+
+    .green-chip {
+        background-color: #A5ECDC;
+        color: #06876B;
+    }
+
+    .pink-chip {
+        background-color: #FFD0E2;
+        color: #DB4880;
+    }
+
+    .purple-chip {
+        background-color: #D186DB;
+        color: #51005B;
+    }
+
+    .red-chip {
+        background-color: #FFB5B0;
+        color: #CF4137;
+    }
+
+    .yellow-chip {
+        background-color: #FFEFCA;
+        color: #D29915;
+    }
+
+    .white-chip {
+        background-color: #FFF;
+        color: #413A42;
+    }
+</style>
+
+<div>
+    <span class="badge @chipColor" style="width: @chipWidth; height: @chipHeight; margin: 2px; @chipStyleAddOn">@ChildContent</span>
+</div>
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string chipColor { get; set; } = "gray-chip";
+    [Parameter] public string chipWidth { get; set; } = "max-content";
+    [Parameter] public string chipHeight { get; set; } = "30px";
+    [Parameter] public string chipStyleAddOn { get; set; } = "30px";
+}
